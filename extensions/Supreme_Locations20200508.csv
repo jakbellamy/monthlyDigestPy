@@ -1,0 +1,106 @@
+Account,Branch,UserName,Password,OfficeAddress,Owner,ID,Admin,Quota
+Supreme Lending Test Account,Test,SL-Test,T*5t!#gSL,,,SL-Test,TRUE,142
+Supreme-QA,,SL-QA,Monkeys!7,QA Enviroment,,SL-QA,FALSE,42
+Supreme-Dev,,SL-DEV,Bananas!7,Dev Enviroment,,SL-DEV,FALSE,87
+Supreme-QA-Admin,Admin,SL-AdmQA,Thrower!7,,,SL-Adm,FALSE,0
+Supreme-Dev-Admin,Admin,SL-AdmDEV,Poop!7,,,SL-Adm,FALSE,0
+Supreme-Admin,Admin,SL-Adm,!Pc$wE9s,,,SL-Adm,TRUE,0
+Berkshire Hathaway Clearwater,,SL039,Inactive2019,"2539 Countryside Blvd. Suite 3, Clearwater, FL 33761",,SL038,TRUE,0
+Exit Realty Premier Elite,,SL038,Pass4U2!,"8961 Hypoluxo Road, Lake Worth, FL 33467",,SL038,TRUE,113
+Berkshire Hathaway St. Pete,,SL037,Inactive2019,"2300 4th Street North, Office A, St. Petersburg, FL 33704",,SL037,TRUE,0
+KW - Intown,,SL036,KWIN!2018,"621 North Avenue - Suite C-50, Atlanta, GA 30308",,SL036,TRUE,125
+Berkshire Hathaway Carrollwood,,SL035,Inactive2019,"13131 N. Dale Mabry, Tampa, FL 33618 ",,SL035,TRUE,0
+KW - Brandon Realty Suburban Tampa,,SL034,Suburban!3,"2119 W. Brandon Blvd. Ste E. Brandon, FL 33511",,SL034,TRUE,75
+KW - Ft. Lauderdale,,SL033,Federal!2,"3696 North Federal Highway, Suite 101, Ft Lauderdale, FL  33308",,SL033,TRUE,38
+KW - Coral Springs,,SL032 ,University!1,"3301 N. University Dr, Ste 412, Coral Springs, FL 33065",,SL032 ,TRUE,82
+KW - Camp Creek,290,SL031,Inactive2019,"3800 Camp Creek Parkway, Building 1800, St 100, Atlanta, GA 30331",Rick Hale,SL031,TRUE,0
+KW - Kannapolis,292,SL028,CaRoPro!7,"6001 Gateway Ctr, St 105, Kannapolis, NC 28081",Steve Bourke,SL028,TRUE,58
+BHG - Coral Ridge,291,SL027,CoralRidge!6,"2700 E Oakland Park BLvd, Ft. Lauderdale, FL 33326",Gene Whiddon,SL027,TRUE,132
+KW - Tucker,290,SL026,Dekalb!5,"1957 Lakeside Pkwy, Ste 520, Tucker, GA 30084",Bryan Fair,SL026,TRUE,27
+KW - Paddocks,290,SL025,Paddocks!4,"3325 Paddocks Parkway, Suite 190, Suwanee, GA 30024 ",Bryan Fair,SL025,TRUE,97
+C21 Tenace Realty,294,SL024,Tenace!3,"3960 Hypoluxo Rd #100, Boynton Beach, FL 33436",Bob Tenace,SL024,TRUE,55
+KW - Midtown,290,SL023,Midtown!2,"1420 Peachtree Street NE, St 100, Atlanta, GA 30309",Rick Hale,SL023,TRUE,94
+KW - Stockbridge,280,SL022,Inactive2019,"303 Corporate Center Dr, Ste 100, Stockbridge, GA 30281 ",Bryan Fair,SL022,TRUE,0
+KW - West Cobb,290,SL021,Wcobb!5,"2651 Dallas Highway, Marietta, GA  30064",Rick Hale,SL021,TRUE,159
+Champagne &amp; Parisi,,SL020,Champagne!9,"151 N Ocean Blvd, Boca Raton, Fl 33432",,SL020,TRUE,40
+KW - Athens,295,SL019,KWA2020#,"1361 Jennings Mill Road, B100, Watkinsville, GA 30677",Keith Cook,SL019,TRUE,84
+KW - Snellville,290,SL018,Northeast!7,"2220 Wisteria Drive, Suite 102, Snellville, GA 30078 ",Bryan Fair,SL018,TRUE,59
+Re/Max Preferred,293,SL017,Bayview!6,"2810 E. Oakland Park Blvd., Ste 200, Fort Lauderdale, 33306",Jim Case,SL017,TRUE,8
+KW - Sugarloaf,290,SL016,Partners!5,"1960 Satellite Blvd., Suite 1100, Duluth, GA 30097 ",Bryan Fair,SL016,TRUE,88
+BHG - Plantation,291,SL015,Weston!4,"PLANTATION - 8134 Broward Blvd, Plantation, FL  33324",Gene Whiddon,SL015,TRUE,0
+Re/Max Park Creek,291,SL014,ParkCreek!3,"5481 Wiles Road Coconut Creek, FL 33073",Bill Fitzsimmons,SL014,TRUE,25
+KW - Buckhead,290,SL013,Premier!2,"3650 Habersham Rd NW, Atlanta, GA 30305",Jean Rawls,SL013,TRUE,63
+KW - East Cobb,290,SL012,EastCobb!1,"3730 Roswell Road, Suite 150, Marietta, GA 30062 ",Jean Rawls,SL012,TRUE,100
+GARealtyGroup NE,295,SL011,Inactive2019,"27 City Square, Suite 1, Hoschton, GA  30548",Nakia Brooks,SL011,TRUE,0
+Re/Max Advisors,294,SL010,Inactive2019,"9615 Westview Drive, Coral Springs, FL 33076",Paul Mandel,SL010,TRUE,0
+Florida Prestigious Homes,294,SL009,Trumbach!8,"10101 W. Sample Rd, Ste 201, Coral Springs, FL 33065",Ian Trumbach,SL009,TRUE,13
+KW - Woodstock,290,SL008,Platinum!7,"722 Stonecroft Lane, Woodstock, GA 30188 ",Rick Hale,SL008,TRUE,179
+BHG - Downtown/Las Olas,291,SL006,Whiddon!6,"DOWNTOWN - 777 S. Federal Highway, Ft. Lauderdale, FL 33316<br />LAS OLAS - 811 East Las Olas Blvd., Ft. Lauderdale, Fl. 33301",Gene Whiddon,SL006,TRUE,0
+Lake Realty,292,SL005,LakeRealty!5,"19900 W Catawba Ave, Suite 103A, Cornelius, NC 28031",Frank Free,SL005,TRUE,22
+KW - Peachtree City,280,SL004,Peachtree!4,"1200 Commerce Drive, Suite 110, Peachtree City, GA 30269",Bryan Fair,SL004,TRUE,110
+Charles Rutenberg Realty,291,SL003,Inactive2019,"2201 West Prospect Rd, Ste 200, Ft. Lauderdale, FL 33309",Cyndi Benchick,SL003,TRUE,0
+KW - Cityside,290,SL002,Cityside!2,"3350 Atlanta Road, Smyrna, GA 30080",Jean Rawls,SL002,TRUE,83
+Supreme_Admin,Admin,SL_ADM,SLADM!7,,,SLADM!7,FALSE,0
+U.A. Wilson Realty LLC,,QL025,AP$$IF,"722 Stonecroft Lane, Woodstock, GA 30188",,QL025,TRUE,63
+"Michael Citron, PA",,QL024,BHH!P24,"5481 Wiles Road, Suite #502, Coconut Creek, FL 33073",,QL024,TRUE,85
+"Naffziger Realty Consultants, LLC",,QL023,Inactive2019,"3375 Dallas Highway, Suite #100, Marietta GA 30064",,QL023,TRUE,0
+The Humes Group,,QL022,HW!2018,"314 Bradford Way, Peachtree City, GA 30269",,QL022,TRUE,63
+Matt Hester & Associates,,QL021,Inactive2019,"2050 Roswell Road, Marietta, GA 30062",,QL021,TRUE,0
+"Eric Slifkin, PA",,QL020,Inactive2019,"1766 SW Waterfall Blvd., Palm City, FL 34990",,QL020,TRUE,0
+"The Home Team Realty Group, Inc.",,QL019,Inactive2019,"6001 Gateway Center Drive, Suite 105, Kannapolis, NC 28081",,QL019,TRUE,0
+"Realty Standard, Inc.",,QL018,RS!PFU,"600 Fairway Drive??Ã‚Â¨ #109B, Deerfield Beach, FL 33441",,QL018,TRUE,50
+The Lewis Group,,QL017,Pass!2U,"804 Town Blvd. , Suite A2040, Atlanta, GA 30319",,QL017,TRUE,292
+"The Bolt Group, LLC",,QL016,Inactive2019,"2305 Stone Wood Court, Cumming, GA 30041
+",,QL016,TRUE,0
+The Page Morgan Team,,QL015,L21!451,"3730 Roswell Road, Suite 150, Marietta, GA 30062",,QL015,TRUE,125
+"Anna K Intown, INC",,QL014,Inactive2019,"607 Clifton Road NE, Atlanta, GA 30307",,QL014,TRUE,0
+"Tamara Bourne, Inc.",,QL013,TBC2018!,"1200 Commerce Drive, Peachtree City, GA 30269",,QL013,TRUE,42
+The Durham Team,,QL012,Inactive2019,"303 Corporate Center Dr. , Suite 100,  Stockbridge, GA 30281",,QL012,TRUE,0
+"Lee Brickey, LLC ",,QL011,Inactive2019,"6093 Pompano Street, Jupiter, FL 33458",,QL011,TRUE,0
+"Juan A Robles, PA ",,QL010,Inactive2019,"3960 Hypoluxo Road, Suite 100, Boynton Beach, FL 33436",,QL010,TRUE,0
+TB Real Estate Inc.,,QL009,Inactive2019,"16216 Ternglade Drive, Lithia, FL 33547",,QL009,TRUE,0
+"Melissa Miller Group, LLC",,QL008,Inactive2019,"1960-7 North Commerce Parkway, Weston, FL 33326",,QL008,TRUE,0
+"Equity One Property Investments, LLC",,QL007,Inactive2019,"3301 N. University Drive, Suite 120, Coral Springs, FL 33065",,QL007,TRUE,0
+"The Cowan Connection Team, LLC",,QL006,Inactive2019,"845 Nob Ridge Drive, Marietta, GA 30064",,QL006,TRUE,0
+"Community and Council, LLC.",,QL005,GSG!2018,"621 North Ave NE, Suite C50, Atlanta, GA 30308 ",,QL005,TRUE,159
+"Sanders Team Realty, LLC",,QL004,BKV2018!,"110 Village Trail  Suite 114, Woodstock, GA 30188",,QL004,TRUE,185
+"HRI, Inc. LLC",,QL003,A2018!BKV,"1805 Millside Terrace, Dacula, GA 30019",,QL003,TRUE,250
+"Luxury Properties, LLC",,QL002,Inactive2019,"3450 Kates Way, Duluth, GA 30097",,QL002,TRUE,0
+THG - Atlanta West Cobb LLC ,,QL001,THGWC!7,"1000 Mansell Exchange West, Suite 270, Alpharetta, GA  30022",Matt Garcia ,QL001,TRUE,333
+"Bruce Swanson and Associates, LLC",,QL026,Inactive2019,"616 Knights Bridge Road, Canton, GA 30115",,QL026,TRUE,0
+Property Guys of Atlanta,,QL027,Pguys!4U,"4214 Terrace Court SE, Smyrna, GA 30082",,QL027,TRUE,63
+"Wolf Real Estate Team, LLC",,QL028,WREPass!,"3812 Acworth Due West Road, NW, Acworth, GA 30101",,QL028,TRUE,84
+Heyl Atlanta West Cobb,,QL029,NewU2019!,"2651 Dallas Highway, Marietta, GA 30064",,QL029,TRUE,125
+"The Mountain Life Team, LLC",,QL030,HHDay2019!,"1665 Appalachian Highway, Blue Ridge, GA 30513",,QL030,TRUE,83
+"Bonnie Mullinax Realty, Inc.",,QL031,GD!2019,"103 Mockingbird Drive, Cartersville, GA 30120",,QL031,TRUE,63
+West Home Team LLC,,QL032,BMR2019!,"631 Dawsonville Hwy, Gainesville, GA 30501",,QL032,TRUE,42
+Christie & Co.,,QL033,CCO224!,"2214 Taylor Grady Terrace, Duluth, GA 30097",,QL033,TRUE,42
+Dominai & Associates LLC,,QL034,DOM2019!,"7211 Grand Reunion Dr. Hoschton, GA 30507",,QL034,TRUE,50
+Sherry & Co,,QL035,SCO2019!,"1740 Cardinal Dr. Cumming, GA 30041",,QL035,TRUE,67
+The Radtke Team LLC,,QL036,TRT2019!,"1463 Edgemont Pt. Lawrenceville, GA 30044",,QL036,TRUE,104
+Freddy Karmatz Real Estate LLC,,QL037,FKR2019!,"615 Kenway Loop Moorsville, NC 28117",,QL037,TRUE,42
+Atlanta First Realty Group LLC,,QL038,AFR2019!,"1995 North Park Place, Suite 415 Atlanta, GA 30339",,QL038,TRUE,42
+"Shannon Sales, Inc.",,QL039,Inactive2019,"1241 Brown’s Country Lane Locust Grove, GA 30248",,QL039,TRUE,0
+KW – Plantation,,SL040,Pine2019!,"1801 N Pine Island Road, Suite 210 Plantation, FL 3322",,SL040,TRUE,44
+KW – Peachtree Road,,SL041,Town2019!,"804 Town Blvd.  Suite A2040 Atlanta, GA 30319",,SL041,TRUE,322
+"North West, LLC",,SL042,Northwest162!,"162 W. Main St, Suite 104 Cartersville, GA 30120",,SL042,TRUE,13
+RAB Partners Inc,,QL040,RAB2019!,"5116 Eubanks Road Woodstock, GA 30188",,QL040,TRUE,48
+Tracey Realty Group LLC,,QL041,Inactive2019,"303 Corporate Center Dr, Ste. 100 Stockbridge, GA 30281",,QL041,TRUE,0
+The Garner Group Inc.,,QL042,Garner2019#,109 Edgewater Way 109 Edgewater Way,,QL042,TRUE,21
+Team Boateng,,QL043,Boateng$2019,"6613 SW 18th Court North Lauderdale, FL 33068",,QL043,TRUE,16
+Wolfert Team,,QL044,Wolfert%2019,"3730 Roswell Road, Suite 150 Marietta, GA 30062",,QL044,TRUE,60
+Kennesaw Life Real Estate LLC,,QL045,KL2019#,"5150 Stilesboro Rd, Suite 300 Kennesaw, GA 30152",,QL045,TRUE,125
+"Charlotte 247 Real Estate, LLC",,QL046,Char247%,"11723 Apleby Ln Charlotte, NC 28277",,QL046,TRUE,50
+BKT Atlanta LLC,,QL047,Inactive2019,"804 Town Blvd.  Suite A2040 Atlanta, GA 30319",,QL047,TRUE,0
+Mahota and Company Inc.,,QL048,MCI2019%,"7305 Oldbury Place Cumming, GA 30040",,QL048,TRUE,35
+"DanielleSellsGeorgia, LLC",,QL049,2019DSG!,"1490 E Bank Drive Marietta, GA 30068",,QL049,TRUE,50
+Lemoine Realty Inc.,,QL050,LRI2019%,"3193 Canter Way Duluth, GA 30097",,QL050,TRUE,42
+"Julie Lurie, PA",,QL051,2019JA$#,"1009 SW 19th St Ft. Lauderdale, FL 33315",,QL051,TRUE,83
+"McKeeth, LLC / The Premier Group",,QL052,TPG#2019,"8604 Main St Woodstock, GA 30188
+8604 Main St",,QL052,TRUE,63
+Amy & Company LLC,,QL053,AC2019%,"2610 Kelleytown Rd. Mcdonough, GA  30252",,QL053,TRUE,42
+"The HUB Real Estate Solutions, LLC",,QL054,HUB2020%,"3668 Highlands Pkwy SE Smyrna, GA 30082 ",,QL054,TRUE,250
+Landmark Realty of South Tampa,,SL043,LRST%2020,"3502 Henderson Blvd, Ste. 300 Tampa, FL 33609",,SL043,TRUE,43
+"Febo Realty, LLC. ",,QL055,FR2020!,"252 St. Martin Dr. Suwanee, GA 30024",,QL055,TRUE,20
+"Andrea Wright, LLC",,QL056,AW$2020,"8420 Village Place Suwanee, GA 30024",,QL056,TRUE,35
+Lakeshore Real Estate Inc.,,QL057,Lakeshore%2020,"2550 Limestone Parkway, Unit F Gainesville, GA 30501 ",,QL057,TRUE,83
