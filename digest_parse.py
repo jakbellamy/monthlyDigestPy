@@ -1,17 +1,14 @@
 import pandas as pd
 import math
 
-column_titles = ['Account Name', 'Account Code', 'Account Monthly Quota',
-				'Total Leads Submitted', 'DM Leads Submitted', 'DM Leads Submitted',
-				'Email Leads Submitted', 'Emails Deployed', 'Open Rate', 'Email Opens',
-				'CTR', 'Email Clicks', 'Email Bounces', 'Bounce Rate', 'Unsubscribes',
-				'Unsubscribe Rate', 'Email Complaints', 'Email Duplicates', 'CASS Failure',
-				'Internal Duplicate', 'Dupe with Prior Batch'
-				]
+column_titles = [
+ 	'Account Name', 'Account Code', 'Account Monthly Quota', 'Total Leads Submitted', 'DM Leads Submitted', 'DM Leads Submitted', 
+ 	'Email Leads Submitted', 'Emails Deployed', 'Open Rate', 'Email Opens', 'CTR', 'Email Clicks', 'Email Bounces', 'Bounce Rate', 
+ 	'Unsubscribes', 'Unsubscribe Rate', 'Email Complaints', 'Email Duplicates', 'CASS Failure', 'Internal Duplicate', 'Dupe with Prior Batch'
+]
 
-def persuade_nan(val):
+def hanlde_NaN(val):
 	return int(val) if math.isnan(val) == False else 0
-
 
 def parse_dfs(counts, locations):
 	column_names = ['Account Name']
@@ -24,18 +21,18 @@ def parse_dfs(counts, locations):
 			'Account Monthly Quota': location['Quota'].values[0] if len(location['Quota'].values) > 0 else 0,
 			'Total Leads Submitted': int(counts.at[i, 'ArchiveTotal']),
 			'Email Leads Submitted': int(counts.at[i, 'ArchiveEmailTotal']),
-			'Email Duplicates': 'TODO',
-			'CASS Failure': 'TODO',
-			'Internal Duplicate': 'TODO',
-			'Dupe with Prior Batch': 'TODO'
+			'Emails Deployed': hanlde_NaN(counts.at[i, 'SentTotal']),
+			'Email Opens': hanlde_NaN(counts.at[i, 'OpenTotal']),
+			'Email Clicks': hanlde_NaN(counts.at[i, 'ClickTotal']),
+			'Email Bounces': hanlde_NaN(counts.at[i, 'BounceTotal']),
+			'Unsubscribes': hanlde_NaN(counts.at[i, 'UnsubTotal']),
+			'Email Complaints': hanlde_NaN(counts.at[i, 'ComplaintTotal']),
+			'DM Leads Submitted': int(counts.at[i, 'ArchiveTotal']) - int(counts.at[i, 'ArchiveEmailTotal']),
+			'Email Duplicates': 'TODO',  #  Need to be sent the new data extension first
+			'CASS Failure': 'TODO',  #  Need to be sent the new data extension first
+			'Internal Duplicate': 'TODO',  #  Need to be sent the new data extension first
+			'Dupe with Prior Batch': 'TODO'  #  Need to be sent the new data extension first
 		}
-		new_row['DM Leads Submitted'] = new_row['Total Leads Submitted'] - new_row['Email Leads Submitted']
-		new_row['Emails Deployed'] = persuade_nan(counts.at[i, 'SentTotal'])
-		new_row['Email Opens'] = persuade_nan(counts.at[i, 'OpenTotal'])
-		new_row['Email Clicks'] = persuade_nan(counts.at[i, 'ClickTotal'])
-		new_row['Email Bounces'] = persuade_nan(counts.at[i, 'BounceTotal'])
-		new_row['Unsubscribes'] = persuade_nan(counts.at[i, 'UnsubTotal'])
-		new_row['Email Complaints'] = persuade_nan(counts.at[i, 'ComplaintTotal'])
 
 		new_df = new_df.append(new_row, ignore_index=True)
 		
