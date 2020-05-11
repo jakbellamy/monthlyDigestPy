@@ -15,7 +15,7 @@ def parse_dfs(counts, locations):
 	new_df = pd.DataFrame(columns = column_names)
 	for i, row in counts.iterrows():
 		location = locations[locations['UserName'] == counts.at[i, 'UserName']]
-		new_row = { # end early in order to self ref
+		new_row = {
 			'Account Name': location['Account'].values[0] if len(location['Account'].values) > 0 else 'EMPTY VALUE',
 			'Account Code': counts.at[i, 'UserName'],
 			'Account Monthly Quota': location['Quota'].values[0] if len(location['Quota'].values) > 0 else 0,
