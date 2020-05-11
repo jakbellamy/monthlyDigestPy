@@ -1,12 +1,17 @@
-col_lens = [ [0, 0, 25], [1, 2, 12], [3, 4, 9], [5, 6, 10.5], [7, 7, 8], [8, 10, 6], [11, 11, 5], [12, 13, 7.2], [14, 14, 6], [15, 16, 10], [17, 17, 8.3], [18, 21, 9] ]
 
-def format_sheet(workbook, sheet):
+def format_sheet(workbook, sheet, data_len):
 	
-	#format column widths and row eights
-	for col_ran in col_lens: # loops through defined column ranges and width values and sets to sheet
-		sheet.set_column(col_ran[0], col_ran[1], col_ran[2])
+	# Set Column styles
+	col_one_style = workbook.add_format()
+	col_one_style.set_bold()
+	sheet.set_column(0, 0, 25, col_one_style)
 
-	#format key row
+	col_heights = [ [1, 2, 12], [3, 4, 9], [5, 6, 10.5], [7, 7, 8], [8, 10, 6], [11, 11, 5], [12, 13, 7.2], [14, 14, 6], [15, 16, 10], [17, 17, 8.3], [18, 21, 9] ]
+	for col_ran in col_heights: # loops through defined column ranges and width values and sets to sheet
+		sheet.set_column(col_ran[0], col_ran[1], col_ran[2])
+		
+
+	#Set Row Styles
 	sheet.set_row(1, 40)
 
 	def header_style(color, align="center"):
@@ -19,9 +24,10 @@ def format_sheet(workbook, sheet):
 		return style
 
 	#Row One Headers
+	sheet.merge_range('A1:D1', '', header_style('#FFFFFF'))
 	sheet.merge_range('E1:F1', 'Direct Mail', header_style('#FE0300'))
-	sheet.merge_range('G1:S1', 'Direct Mail', header_style('#91D04F'))
-	sheet.merge_range('T1:V1', 'Direct Mail', header_style('#8DB4E1'))
+	sheet.merge_range('G1:S1', 'Email', header_style('#91D04F'))
+	sheet.merge_range('T1:V1', 'Direct Mail Rejects', header_style('#8DB4E1'))
 
 	#Row Two Group One Headers
 	sheet.write('A2', 'Account Name', header_style('#D9D9DA', 'left'))
@@ -50,4 +56,3 @@ def format_sheet(workbook, sheet):
 	sheet.write('T2', 'CASS Failure', header_style('#808080'))
 	sheet.write('U2', 'Internal Duplicates', header_style('#808080'))
 	sheet.write('V2', 'Dupe with Prior Batch', header_style('#808080'))
-	

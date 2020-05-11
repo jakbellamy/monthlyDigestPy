@@ -10,7 +10,7 @@ column_titles = [
 def hanlde_NaN(val):
 	return int(val) if math.isnan(val) == False else 0
 
-def parse_dfs(counts, locations):
+def ex_parser(counts, locations):
 	column_names = ['Account Name']
 	new_df = pd.DataFrame(columns = column_names)
 	for i, row in counts.iterrows():

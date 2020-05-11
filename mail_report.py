@@ -1,11 +1,11 @@
 import pandas as pd
 import xlsxwriter
-from digest_parse import parse_dfs
-from playground import format_sheet
+from parse_extensions import ex_parser
+from playground import build_table
 
 counts = pd.read_csv('./extensions/Archive_CountsByUser20200506.csv') #  Should eventually be supplied in req or queried by FTP
 locations = pd.read_csv('./extensions/Supreme_Locations20200508.csv') #  Should eventually be supplied in req or queried by FTP
-df = parse_dfs(counts, locations)
+df = ex_parser(counts, locations)
 
 #split df into asa and asa lite
 a_df = df[df['Account Code'].str.contains('SL', na=False)].sort_values(by=['Account Name'])
@@ -21,8 +21,8 @@ worksheet_asa = writer.sheets['ASA']
 worksheet_lite = writer.sheets['ASA Lite']
 
 # format sheets
-format_sheet(workbook, worksheet_asa)
-format_sheet(workbook, worksheet_lite)
+build_table(workbook, worksheet_asa, len(a_df))
+build_table(workbook, worksheet_lite, len(l_df))
 
 #save file and fin.
 writer.save()
