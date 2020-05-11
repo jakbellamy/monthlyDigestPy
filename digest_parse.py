@@ -4,7 +4,7 @@ import math
 column_titles = [
  	'Account Name', 'Account Code', 'Account Monthly Quota', 'Total Leads Submitted', 'DM Leads Submitted', 'DM Leads Submitted', 
  	'Email Leads Submitted', 'Emails Deployed', 'Open Rate', 'Email Opens', 'CTR', 'Email Clicks', 'Email Bounces', 'Bounce Rate', 
- 	'Unsubscribes', 'Unsubscribe Rate', 'Email Complaints', 'Email Duplicates', 'CASS Failure', 'Internal Duplicate', 'Dupe with Prior Batch'
+ 	'Unsubscribes', 'Unsubscribe Rate', 'Email Complaints', 'Complaint Rate', 'Email Duplicates', 'CASS Failure', 'Internal Duplicate', 'Dupe with Prior Batch'
 ]
 
 def hanlde_NaN(val):
@@ -33,7 +33,6 @@ def parse_dfs(counts, locations):
 			'Internal Duplicate': 'TODO',  #  Need to be sent the new data extension first
 			'Dupe with Prior Batch': 'TODO'  #  Need to be sent the new data extension first
 		}
-
 		new_df = new_df.append(new_row, ignore_index=True)
 		
 	return new_df.reindex(columns=column_titles)
