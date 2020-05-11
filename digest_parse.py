@@ -53,5 +53,3 @@ def build_new_df():
 	return new_df
 
 df = build_new_df()
-df.to_excel("output.xlsx") 
-print(df)
