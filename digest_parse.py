@@ -4,6 +4,15 @@ collection = pd.read_csv('./extensions/ARCHIVE_Supreme_Collection_DE20200506.csv
 counts = pd.read_csv('./extensions/Archive_CountsByUser20200506.csv')
 locations = pd.read_csv('./extensions/Supreme_Locations20200508.csv')
 
+#	Initialize Column Titles For Later Rearrange
+column_titles = ['Account Name', 'Account Code', 'Account Monthly Quota',
+				'Total Leads Submitted', 'DM Leads Submitted', 'DM Leads Submitted',
+				'Email Leads Submitted', 'Emails Deployed', 'Open Rate', 'Email Opens',
+				'CTR', 'Email Clicks', 'Email Bounces', 'Bounce Rate', 'Unsubscribes',
+				'Unsubscribe Rate', 'Email Complaints', 'Email Duplicates', 'CASS Failure',
+				'Internal Duplicate', 'Dupe with Prior Batch'
+				]
+
 #	method to determine what kind of mail the record is
 def is_dm(record): #	seems to be working but throws error if record doesn't have att. 'Address1'
 	if record['Address1']:
@@ -30,12 +39,17 @@ def build_new_df():
 	for i, row in counts.iterrows():
 		location = locations[locations['UserName'] == counts.at[i, 'UserName']]
 		new_row = { # end early in order to self ref
-			'Account Name': location['Account'],
+			'Account Name': location['Account'].values[0] if len(location['Account'].values) > 0 else 'EMPTY VALUE',
 			'Account Code': counts.at[i, 'UserName'],
-			'Account Monthly Quota': location['Quota'],
+			'Account Monthly Quota': location['Quota'].values[0] if len(location['Quota'].values) > 0 else 'EMPTY VALUE',
 			'Total Leads Submitted': int(counts.at[i, 'ArchiveTotal']),
 			'Email Leads Submitted': int(counts.at[i, 'ArchiveEmailTotal']),
 			'Email Duplicates': 'TODO',
+			'Open Rate': 'FMLA',
+			'CTR': 'FMLA',
+			'Bounce Rate': 'FMLA',
+			'Unsubscribe Rate': 'FMLA',
+			'Complaint Rate': 'FMLA',
 			'CASS Failure': 'TODO',
 			'Internal Duplicate': 'TODO',
 			'Dupe with Prior Batch': 'TODO'
@@ -52,4 +66,5 @@ def build_new_df():
 		
 	return new_df
 
-df = build_new_df()
+#	init df for export
+df = build_new_df().reindex(columns=column_titles)
