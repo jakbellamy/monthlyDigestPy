@@ -68,3 +68,4 @@ def build_new_df():
 
 #	init df for export
 df = build_new_df().reindex(columns=column_titles)
+
