@@ -57,3 +57,4 @@ def format_sheet(workbook, sheet):
 	sheet.write('S2', 'CASS Failure', _stats_2)
 	sheet.write('T2', 'Internal Duplicates', _stats_2)
 	sheet.write('U2', 'Dupe with Prior Batch', _stats_2)
+	
