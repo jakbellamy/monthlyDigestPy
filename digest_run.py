@@ -1,7 +1,11 @@
 import pandas as pd
 import xlsxwriter
-from digest_parse import df
+from digest_parse import parse_dfs
 from digest_format import format_sheet
+
+counts = pd.read_csv('./extensions/Archive_CountsByUser20200506.csv') #  Should eventually be supplied in req or queried by FTP
+locations = pd.read_csv('./extensions/Supreme_Locations20200508.csv') #  Should eventually be supplied in req or queried by FTP
+df = parse_dfs(counts, locations)
 
 #split df into asa and asa lite
 a_df = df[df['Account Code'].str.contains('SL', na=False)].sort_values(by=['Account Name'])

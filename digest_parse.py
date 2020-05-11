@@ -1,10 +1,5 @@
 import pandas as pd
 
-collection = pd.read_csv('./extensions/ARCHIVE_Supreme_Collection_DE20200506.csv')
-counts = pd.read_csv('./extensions/Archive_CountsByUser20200506.csv')
-locations = pd.read_csv('./extensions/Supreme_Locations20200508.csv')
-
-#	Initialize Column Titles For Later Rearrange
 column_titles = ['Account Name', 'Account Code', 'Account Monthly Quota',
 				'Total Leads Submitted', 'DM Leads Submitted', 'DM Leads Submitted',
 				'Email Leads Submitted', 'Emails Deployed', 'Open Rate', 'Email Opens',
@@ -13,27 +8,8 @@ column_titles = ['Account Name', 'Account Code', 'Account Monthly Quota',
 				'Internal Duplicate', 'Dupe with Prior Batch'
 				]
 
-#	method to determine what kind of mail the record is
-def is_dm(record): #	seems to be working but throws error if record doesn't have att. 'Address1'
-	if record['Address1']:
-		return True
-	else:
-		return 'Sorry'
 
-def filter_dates(df, period):
-	for i, row in df.iterrows():
-		if type(df.at[i, 'DateAdded']) == str:
-			sp_date = df.at[i, 'DateAdded'].split(' ')[0].split('/')
-			mon_yr = sp_date[0] + sp_date[2]
-			df.at[i, 'DateAdded'] = mon_yr
-	return df[df['DateAdded'] == period]
-
-#cur_col = filter_dates(collection, '52020')
-#print(cur_col)
-
-###COUNTS###
-
-def build_new_df():
+def parse_dfs(counts, locations):
 	column_names = ['Account Name']
 	new_df = pd.DataFrame(columns = column_names)
 	for i, row in counts.iterrows():
@@ -45,11 +21,6 @@ def build_new_df():
 			'Total Leads Submitted': int(counts.at[i, 'ArchiveTotal']),
 			'Email Leads Submitted': int(counts.at[i, 'ArchiveEmailTotal']),
 			'Email Duplicates': 'TODO',
-			'Open Rate': 'FMLA',
-			'CTR': 'FMLA',
-			'Bounce Rate': 'FMLA',
-			'Unsubscribe Rate': 'FMLA',
-			'Complaint Rate': 'FMLA',
 			'CASS Failure': 'TODO',
 			'Internal Duplicate': 'TODO',
 			'Dupe with Prior Batch': 'TODO'
@@ -64,8 +35,4 @@ def build_new_df():
 
 		new_df = new_df.append(new_row, ignore_index=True)
 		
-	return new_df
-
-#	init df for export
-df = build_new_df().reindex(columns=column_titles)
-
+	return new_df.reindex(columns=column_titles)
