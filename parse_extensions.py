@@ -16,9 +16,9 @@ def ex_parser(counts, locations):
 	for i, row in counts.iterrows():
 		location = locations[locations['UserName'] == counts.at[i, 'UserName']]
 		new_row = {
-			'Account Name': location['Account'].values[0] if len(location['Account'].values) > 0 else 'EMPTY VALUE',
+			'Account Name': location['Account'].values[0] if len(location['Account'].values) > 0 else 'KW - Coral Springs',
 			'Account Code': counts.at[i, 'UserName'],
-			'Account Monthly Quota': location['Quota'].values[0] if len(location['Quota'].values) > 0 else 0,
+			'Account Monthly Quota': location['Quota'].values[0] if len(location['Account'].values) > 0 else 82,
 			'Total Leads Submitted': int(counts.at[i, 'ArchiveTotal']),
 			'Email Leads Submitted': int(counts.at[i, 'ArchiveEmailTotal']),
 			'Emails Deployed': hanlde_NaN(counts.at[i, 'SentTotal']),
@@ -36,3 +36,4 @@ def ex_parser(counts, locations):
 		new_df = new_df.append(new_row, ignore_index=True)
 		
 	return new_df.reindex(columns=column_titles)
+##NOTE!! I'm handling the weird parser bug (which only hits for account_id SL032) in a temporary way which must be updated
